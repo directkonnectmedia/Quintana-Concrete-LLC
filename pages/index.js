@@ -19,12 +19,12 @@ const Home = (props) => {
         <section id="home" className="hero-concrete">
           <div className="hero-concrete-bg">
             <video
-              src="https://assets.mixkit.co/videos/9897/9897-720.mp4"
-              loop="true"
-              muted="true"
-              poster="https://assets.mixkit.co/videos/9897/9897-thumb-720-0.jpg"
-              autoPlay="true"
-              playsInline="true"
+              src="https://videos.pexels.com/video-files/4135408/4135408-hd_1920_1080_30fps.mp4"
+              loop={true}
+              muted={true}
+              poster="https://images.pexels.com/videos/4135408/pictures/preview-0.jpg"
+              autoPlay={true}
+              playsInline={true}
               className="hero-concrete-video"
             ></video>
             <div className="hero-concrete-overlay"></div>
