@@ -2166,10 +2166,10 @@
 
 /* ---------- GALLERY ---------- */
 .gallery-preview {
-  background-color: var(--qc-black);
+  background-color: #ffffff;
 }
 .gallery-title {
-  color: var(--qc-text);
+  color: var(--qc-black);
   border-bottom: 4px solid var(--qc-red);
   display: inline-block;
   padding-bottom: 8px;
