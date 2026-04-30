@@ -2039,7 +2039,8 @@
   width: auto;
   display: block;
   object-fit: contain;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+  background: transparent;
+  mix-blend-mode: screen;
 }
 .hero-concrete-main-title {
   font-size: clamp(2rem, 5.5vw, 4.25rem) !important;
