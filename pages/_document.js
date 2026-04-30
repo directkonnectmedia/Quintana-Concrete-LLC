@@ -5,6 +5,12 @@ class CustomDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="utf-8"></meta>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+          ></meta>
+          <meta name="theme-color" content="#000000"></meta>
+          <meta name="format-detection" content="telephone=no"></meta>
           <meta property="twitter:card" content="summary_large_image"></meta>
           <style
             dangerouslySetInnerHTML={{
