@@ -11,9 +11,16 @@ const Footer = (props) => {
           <div className="footer-container">
             <div className="footer-grid">
               <div className="footer-brand footer-column">
-                <h2 className="footer-logo section-title">
-                  QUINTANA CONCRETE, LLC
-                </h2>
+                <div className="footer-brand-row">
+                  <img
+                    src="/qc-logo.png"
+                    alt="Quintana Concrete QC Logo"
+                    className="footer-brand-logo"
+                  />
+                  <h2 className="footer-logo section-title">
+                    QUINTANA CONCRETE, LLC
+                  </h2>
+                </div>
                 <p className="footer-mission section-content">
                   Arizona&apos;s premier concrete specialists. Commercial and
                   Residential. We pour it right the first time. 100% dedicated
@@ -42,18 +49,10 @@ const Footer = (props) => {
                           ></path>
                         </svg>
                       </span>
-                      <span>
-                        {' '}
-                        (602) 471-3046
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
+                      <span>(602) 471-3046</span>
                     </div>
                   </a>
-                  <a href="mailto:info@quintanaconcrete.com?subject=">
+                  <a href="mailto:info@quintanaconcrete.com">
                     <div className="footer-email-link">
                       <span className="footer-icon-wrapper">
                         <svg
@@ -69,21 +68,12 @@ const Footer = (props) => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                           >
-                            <circle r="4" cx="6" cy="12"></circle>
-                            <circle r="4" cx="18" cy="12"></circle>
-                            <path d="M6 16h12"></path>
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M22 6L12 13L2 6"></path>
                           </g>
                         </svg>
                       </span>
-                      <span>
-                        {' '}
-                        info@quintanaconcrete.com
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
+                      <span>info@quintanaconcrete.com</span>
                     </div>
                   </a>
                   <div className="footer-address">
@@ -106,7 +96,7 @@ const Footer = (props) => {
                         </g>
                       </svg>
                     </span>
-                    <p className="section-content">
+                    <p className="section-content footer-address-text">
                       Serving the Greater Phoenix Area &amp; Surrounding Cities
                     </p>
                   </div>
@@ -116,13 +106,13 @@ const Footer = (props) => {
                 <h3 className="footer-heading">NAVIGATION</h3>
                 <ul className="footer-nav-list">
                   <li className="footer-nav-item">
-                    <a href="#">
+                    <a href="#home">
                       <div className="footer-nav-link">
                         <span className="footer-nav-icon">
                           <svg
-                            width="24"
+                            width="20"
                             xmlns="http://www.w3.org/2000/svg"
-                            height="24"
+                            height="20"
                             viewBox="0 0 24 24"
                           >
                             <path
@@ -135,15 +125,7 @@ const Footer = (props) => {
                             ></path>
                           </svg>
                         </span>
-                        <span>
-                          {' '}
-                          HOME
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
+                        <span>HOME</span>
                       </div>
                     </a>
                   </li>
@@ -152,9 +134,9 @@ const Footer = (props) => {
                       <div className="footer-nav-link">
                         <span className="footer-nav-icon">
                           <svg
-                            width="24"
+                            width="20"
                             xmlns="http://www.w3.org/2000/svg"
-                            height="24"
+                            height="20"
                             viewBox="0 0 24 24"
                           >
                             <path
@@ -167,15 +149,7 @@ const Footer = (props) => {
                             ></path>
                           </svg>
                         </span>
-                        <span>
-                          {' '}
-                          SERVICES
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
+                        <span>SERVICES</span>
                       </div>
                     </a>
                   </li>
@@ -184,9 +158,9 @@ const Footer = (props) => {
                       <div className="footer-nav-link">
                         <span className="footer-nav-icon">
                           <svg
-                            width="24"
+                            width="20"
                             xmlns="http://www.w3.org/2000/svg"
-                            height="24"
+                            height="20"
                             viewBox="0 0 24 24"
                           >
                             <path
@@ -199,26 +173,18 @@ const Footer = (props) => {
                             ></path>
                           </svg>
                         </span>
-                        <span>
-                          {' '}
-                          GALLERY
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
+                        <span>GALLERY</span>
                       </div>
                     </a>
                   </li>
                   <li className="footer-nav-item">
-                    <a href="#quote">
+                    <a href="#contact">
                       <div className="footer-nav-link footer-cta-link">
                         <span className="footer-nav-icon">
                           <svg
-                            width="24"
+                            width="20"
                             xmlns="http://www.w3.org/2000/svg"
-                            height="24"
+                            height="20"
                             viewBox="0 0 24 24"
                           >
                             <path
@@ -231,15 +197,7 @@ const Footer = (props) => {
                             ></path>
                           </svg>
                         </span>
-                        <span>
-                          {' '}
-                          GET A QUOTE
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
+                        <span>GET A QUOTE</span>
                       </div>
                     </a>
                   </li>
@@ -249,7 +207,7 @@ const Footer = (props) => {
             <div className="footer-bottom">
               <div className="footer-divider"></div>
               <div className="footer-legal">
-                <p className="section-content">
+                <p>
                   © 2026 Quintana Concrete, LLC. All Rights Reserved. Licensed,
                   Bonded &amp; Insured.
                 </p>
@@ -257,48 +215,10 @@ const Footer = (props) => {
             </div>
           </div>
         </footer>
-        <div className="footer-container2">
-          <div className="footer-container3">
-            <Script
-              html={`<script defer data-name="footer-scroll-effects">
-(function(){
-  const footerIcons = document.querySelectorAll(".footer-icon-wrapper svg")
-
-  footerIcons.forEach((icon) => {
-    icon.parentElement.addEventListener("mouseenter", () => {
-      icon.style.transform = "scale(1.2) rotate(5deg)"
-      icon.style.transition = "transform 0.3s ease"
-    })
-
-    icon.parentElement.addEventListener("mouseleave", () => {
-      icon.style.transform = "scale(1) rotate(0deg)"
-    })
-  })
-
-  const navLinks = document.querySelectorAll(".footer-nav-link")
-  navLinks.forEach((link) => {
-    link.addEventListener("mouseenter", () => {
-      link.style.textShadow = "0 0 8px rgba(236, 31, 40, 0.4)"
-    })
-    link.addEventListener("mouseleave", () => {
-      link.style.textShadow = "none"
-    })
-  })
-})()
-</script>`}
-            ></Script>
-          </div>
-        </div>
       </div>
       <style jsx>
         {`
           .footer-container1 {
-            display: contents;
-          }
-          .footer-container2 {
-            display: none;
-          }
-          .footer-container3 {
             display: contents;
           }
         `}

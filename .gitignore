@@ -34,8 +34,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# research artifacts (not part of production site)
-site_html.html
-clayton_html.html
-clayton_base.css
-style.css
+# research artifacts (not part of production site, kept at repo root only)
+/site_html.html
+/clayton_html.html
+/clayton_base.css
+/style.css
+/QUINTANA CONCRETE LOGO.png
